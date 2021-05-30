@@ -6,6 +6,8 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- DATA-AOS Import -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
 
     <body>
@@ -74,10 +76,10 @@
                   We are an organization dedicated to providing more privacy and support to activist groups through Blockchain.
                 </h1>
                 <a class="nav-link" href = '#learn'>
-                  <button style = 'margin-left: 17%; margin-top: 3%; font-size: 25px;' type="button" class="btn btn-outline-primary btn-lg">Learn More</button>
+                  <button data-aos='fade-down' data-aos-duration="2000" style = 'margin-left: 17%; margin-top: 7%; font-size: 25px;' type="button" class="btn btn-outline-primary btn-lg">Learn More</button>
               </div>
               <div class="col">
-                <img width = '90%' src = './Resources/laptop.png' alt = 'Laptop'></img>
+                <img data-aos = 'fade-up' data-aos-duration="2000" width = '90%' src = './Resources/laptop.png' alt = 'Laptop'></img>
               </div>
           </div>
         </div>
@@ -87,9 +89,9 @@
           <div class="container">
             <div class="row">
               <div class="col">
-                <img width = '100%' src = './Resources/ledger.png' alt = 'Ledger'>
+                <img data-aos = 'fade-right' data-aos-duration="2000" width = '100%' src = './Resources/ledger.png' alt = 'Ledger'>
               </div>
-              <div class="col" style = 'padding-left: 4%'>
+              <div class="col" style = 'padding-left: 4%' data-aos = 'fade-down' data-aos-duration="2000">
                 <h1 style = 'font-family: Poppins;font-style: normal;font-weight: normal;
                 font-size: 57px;line-height: 110%;letter-spacing: -0.045em; color: #23242A;'>Why Blockchain?</h1>
                 <h2 style = 'font-family: Poppins;font-style: normal;font-weight: normal;font-size: 26px;
@@ -110,5 +112,11 @@
 
         <!-- Contact Us Section -->
         <div class = 'contact' id = 'contact'></div>
-    </body>
+
+        <!-- Script Import -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+    </body> 
 </html>

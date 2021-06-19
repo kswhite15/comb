@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<head>
+</style>
+
+<body>
+
+	<h1> About Us </h1>
+
+	<h2> Who Are We? </h2>
+
+	<p2> We are a community of activists seeking to establish a cooperative platform where multiple groups can interact, share, and spread their ideas and philosophies. On Comb, we welcome diverse ideas and devote ourselves to providing integrity, privacy, and transparency to our users. </p2>
+
+	<h3> The Goal </h3>
+
+	<p3> We are Comb, a co-operative committed to setting the scales of justice for activists aspiring to find a pedestal to express their voices, aspiring to become a force to be reckoned with. Inclusivity, passion, and community are words we aim to bring meaning to through a platform that nurtures these ideals. It is our responsibility to set truth into action, to help support the sea of voices become an unstoppable torrent of waves to uplift those who wish to create movements, to ignite the flickers of change. We are Comb, and we see the promise within us. </p3>
+
+	<h3> Our Visions, Our Future </h3>
+
+	<div class = "container">
+		<div class = "mySlides">
+			<div class = "numbertext"> 1/4 </div>
+			<img src = >
+			<div class = "text"> Caption Text </div>
+		</div>
+
+
+		<div class = "mySlides">
+			<div class = "numbertext"> 2/4 </div>
+			<div class = "text"> Caption Text </div>
+		</div>
+
+		<div class = "mySlides">
+			<div class = "numbertext"> 3/4 </div>
+			<div class = "text"> Caption Text </div>
+		</div>
+
+		<div class = "mySlides">
+			<div class = "numbertext"> 4/4 </div>
+			<div class = "text"> Caption Text </div>
+		</div>
+
+		<a class = "prev" onclick = "plusSlides(-1)"</a>
+		<a class = "next" onclick = "plusSlides(1)"</a>
+
+			<div style = "text-align: center">
+				<span class = "dot" onclick = "currentSlide(1)"></span>
+				<span class = "dot" onclick = "currentSlide(2)"></span>
+				<span class = "dot" onclick = "currentSlide(3)"></span>
+			</div>
+
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+
+				function plusSlides(n){
+					showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n){
+					showSlides(slideIndex = n);
+				}
+
+				function showSlides(n){
+					var i;
+					var slides = document.getElementsByClassName("mySlides");
+					var dots = document.getElementsByClassName("dot");
+					if(n > slides.length) {slideIndex = 1}
+					if (n < 1) {slideIndex = slides.length}
+  					for (i = 0; i < slides.length; i++) {
+      					slides[i].style.display = "none";  
+  					}
+  
+  					for (i = 0; i < dots.length; i++) {
+      					dots[i].className = dots[i].className.replace("active", "");
+  					}
+  
+  					slides[slideIndex-1].style.display = "block";  
+  					dots[slideIndex-1].className += "active";
+					}
+					</script>
+
+				}
+
+		<h4> +Innovation </h4> 
+		<h4> +Passion </h4>
+		<h4> +Committment </h4>
+		<h4> +Justice </h4>
+
+		<h2> The Worker Bees </h2>

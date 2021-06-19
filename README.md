@@ -12,6 +12,7 @@ Main repo for good trouble/ blockchain justice co-op
 2. Make changes and commit your files `git commit -m "Commit message"`
 3. Push your banch onto the remote repository `git push -u origin <branch name>`
 
-# Pulling from Github, this is necessary since we are all coding in our own repository
+# If there are multiple people coding the same page, make sure to make a pull request
 1. Go into Github Desktop
 2. Select create pull request
+3. Open in Github Desktop

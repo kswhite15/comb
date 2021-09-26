@@ -1,5 +1,5 @@
 # COMB
-Main repo forCOMB co-op
+Main repo for COMB co-op
 
 # Make Changes
 1. Use auto-generated CSS from Figma layout: https://www.figma.com/file/2ci1wvuk6UGTXzjbisR9NQ/Overview-of-Comb?node-id=1%3A2 
@@ -16,3 +16,7 @@ Main repo forCOMB co-op
 1. Go into Github Desktop
 2. Select create pull request
 3. Open in Github Desktop
+
+# Website is live here
+1. https://kswhite15.github.io/comb/Main/
+2. 

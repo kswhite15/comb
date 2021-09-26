@@ -1,5 +1,5 @@
-# Good Trouble
-Main repo for good trouble/ blockchain justice co-op
+# COMB
+Main repo forCOMB co-op
 
 # Make Changes
 1. Use auto-generated CSS from Figma layout: https://www.figma.com/file/2ci1wvuk6UGTXzjbisR9NQ/Overview-of-Comb?node-id=1%3A2 

@@ -19,4 +19,3 @@ Main repo for COMB co-op
 
 # Website is live here
 1. https://kswhite15.github.io/comb/Main/
-2. 

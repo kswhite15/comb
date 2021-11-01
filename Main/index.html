@@ -1,357 +1,93 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <!-- Bootstrap Imports -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        
-        <!-- For carousel -->
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        
-        <!-- DATA-AOS Import -->
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css"> 
+</head>
 
-        
-    </head>
+<body>
 
-    <body>
-      <nav style = 'background: linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FFF4D4;' class="navbar navbar-expand-lg navbar-light navbar-full sticky-top">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">
-                    <h2>
-                      <b>Comb</b>
-                    </h2>
-                  <span class="sr-only">(current)</span></a>
-                </li>
+    <!-- Using Bluma -->
+    <section id= 'home-page' class="hero is-warning is-fullheight">
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head">
+          <header class="navbar">
+            <div class="container">
+              <div class="navbar-brand">
+                <a class="navbar-item">
+                    <h1>COMB</h1>
+                  <!-- <img src="https://bulma.io/images/bulma-type-white.png" alt="Comb Logo"> --> 
+                </a>
+                <span class="navbar-burger" data-target="navbarMenuHeroC">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </div>
+              <div id="navbarMenuHeroC" class="navbar-menu">
+                <div class="navbar-end">
+                  <a class="navbar-item is-active">
+                    Home
+                  </a>
+                  <a class="navbar-item">
+                    About Us
+                  </a>
+                  <a class="navbar-item">
+                    Product
+                  </a>
+                  <a class="navbar-item">
+                    Meet The Team
+                  </a>
+                  <span class="navbar-item">
+                    <a class="button is-success is-inverted">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Contact Us</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </header>
+        </div>
+      
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <p class="title">
+              Title
+            </p>
+            <p class="subtitle">
+              Subtitle
+            </p>
+          </div>
+        </div>
+      
+        <!-- Hero footer: will stick at the bottom -->
+        <div class="hero-foot">
+          <nav class="tabs is-boxed is-fullwidth">
+            <div class="container">
+              <ul>
+                <li class="is-active"><a>Overview</a></li>
+                <li><a>Modifiers</a></li>
+                <li><a>Grid</a></li>
+                <li><a>Elements</a></li>
+                <li><a>Components</a></li>
+                <li><a>Layout</a></li>
               </ul>
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active" style = "margin-right: 10px;">
-                  <a class="nav-link" href="#">
-                    <h5>
-                      HOME
-                    </h5>
-                  <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active" style = "margin-right: 10px;">
-                  <a class="nav-link" href="#learn">
-                    <h5>
-                      ABOUT US 
-                    </h5>
-                  <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active" style = "margin-right: 10px;">
-                  <a class="nav-link" href="#blog">
-                    <h5>
-                      PRODUCT
-                    </h5>
-                  <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="#about" style = "margin-right: 10px;">
-                    <h5>
-                      MEET THE TEAM 
-                    </h5>
-                  <span class="sr-only">(current)</span></a>
-                </li>    
-                <li class="nav-item active" style = "margin-right: 10px;">
-                  <a class="nav-link" href = '#contact'>
-                    <div id = "login-btn" type="button" class="btn btn-info btn-round login-btn">
-                      CONTACT US 
-                    </div>
-                  <span class="sr-only">(current)</span></a>
-                </li>
-              </ul>
             </div>
-        </nav>
-
-        <!-- Home Section -->
-        <div class = '#'>
-          <div class="container" style = 'padding-top: 5%;'>
-            <div class="row">
-              <div class="col">
-                <h1 style = 'padding-top: 3%; font-family: Poppins;font-style: normal;font-weight: normal;font-size: 48px;
-                line-height: 120%;display: flex;align-items: center;letter-spacing: 0.11em;text-transform: uppercase;'>
-                  Comb 
-                </h1>
-                <h1 style = 'font-family: Poppins; font-style: normal;font-weight: normal;font-size: 30px;
-                line-height: 110%;display: flex;align-items: center;letter-spacing: -0.045em; padding-top: 3%;'>
-                We are a platform co-operative building a blockchain based tool that helps activists organize  
-                </h1>
-                <a class="nav-link" href = '#learn'>
-                  <button data-aos='fade-down' data-aos-duration="2000" style = 'margin-left: 17%; margin-top: 7%; font-size: 25px;' type="button" class="btn btn-outline-primary btn-lg">Learn More</button>
-              </div>
-              <div class="col">
-                <img data-aos = 'fade-up' data-aos-duration="2000" width = '90%' src = './Resources/laptop.png' alt = 'Laptop'></img>
-              </div>
-          </div>
+          </nav>
         </div>
-
-        <!-- Learn Section -->
-        <div class = 'learn' id = 'learn' style = 'padding-top: 5%; cursor: auto'>
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <img data-aos = 'fade-right' data-aos-duration="2000" width = '100%' src = './Resources/ledger.png' alt = 'Ledger'>
-              </div>
-              <div class="col" style = 'padding-left: 4%' data-aos = 'fade-down' data-aos-duration="2000">
-                <h1 style = 'font-family: Poppins;font-style: normal;font-weight: normal;
-                font-size: 57px;line-height: 110%;letter-spacing: -0.045em; color: #23242A;'>Why Blockchain?</h1>
-                <h2 style = 'font-family: Poppins;font-style: normal;font-weight: normal;font-size: 26px;
-                line-height: 120%;letter-spacing: -0.01em;color: #23242A; padding-top: 2%;'>
-                  We believe that blockchain can be harnessed to provide both privacy and transparency to activists and empower them with a network, where their information/data cannot be compromised or sold to third party groups. Blockchain’s decentralized structure also allows for distributed control of the system rather than concentrated control by just one group, further allowing users to have more independence and stability. 
-                </h2>
-              </div>
-          </div>
-        </div>
-
-        <!-- Blog Section -->
-        <div class = 'blog' id = 'blog' style = 'background: linear-gradient(90deg, #FFFFFF -45.04%, rgba(255, 255, 255, 0) 102.87%), #D8F6FF; 
-        cursor: auto; width: 100%; left: 0;margin: 0 auto; padding-bottom: 2%;'>
-        <div class="container" style = 'padding-top: 5%;'>
-          <h1 style = 'font-family: Poppins;font-style: normal;font-weight: normal;
-                font-size: 52px;line-height: 110%;letter-spacing: -0.045em;color: #23242A;'>
-                What makes blockchain so secure?
-              </h1>
-          <div class="row">
-            <div class="col-8">
-              <h2 data-aos = 'fade-right' data-aos-duration="2000" style = 'font-family: Poppins;font-style: normal;font-weight: normal;
-                font-size: 30px;line-height: 110%;letter-spacing: -0.045em;color: #23242A; padding-top: 2%'>
-                  Blockchains are secured through a variety of mechanisms that include advanced cryptographic 
-                  techniques and mathematical models of behavior and decision-making. Blockchain technology is 
-                  the underlying structure of most cryptocurrency systems and is what prevents this kind of 
-                  digital money from being duplicated or destroyed. The use of blockchain technology is 
-                  also being explored in other contexts where data immutability and security are highly valuable. 
-                  A few examples include the act of recording and tracking charity donations, medical databases, and 
-                  supply chain management.
-                </h2>
-            </div>
-            <div class="col-4">
-              <img data-aos = 'fade-up' data-aos-duration="2000" width = 120% src = './Resources/blog.png' alt = 'Laptop'></img>
-            </div>
-          </div>
-          <h1 data-aos = 'fade-up' data-aos-duration="2000" style = 'font-family: Poppins;font-style: normal;font-weight: normal;
-                font-size: 52px;line-height: 110%;letter-spacing: -0.045em;color: #23242A; padding-top: 2%'>
-                How does blockchain make it difficult for hackers?
-          </h1>
-          <h2 data-aos = 'fade-up' data-aos-duration="2000" style = 'font-family: Poppins;font-style: normal;font-weight: normal;
-              font-size: 30px;line-height: 110%;letter-spacing: -0.045em;color: #23242A; padding-top: 2%'>
-                Blockchains rely heavily on cryptography to achieve their data security. In this context, the 
-                so-called cryptographic hashing functions are of fundamental importance. Hashing is a process 
-                whereby an algorithm (hash function) receives an input of data of any size and returns an output
-                (hash) that contains a predictable and fixed size (or length). Regardless of the input size, 
-                the output will always present the same length. But if the input changes, the output will be 
-                completely different. However, if the input doesn’t change, the resulting hash will always be 
-                the same - no matter how many times you run the hash function. 
-          <h2 data-aos = 'fade-up' data-aos-duration="2000" style = 'font-family: Poppins;font-style: normal;font-weight: normal;
-                font-size: 30px;line-height: 110%;letter-spacing: -0.045em;color: #23242A; padding-top: 2%'>
-                Within blockchains, these output values, known as hashes, are used as unique identifiers for 
-                data blocks. The hash of each block is generated in relation to the hash of the previous block, 
-                and that is what creates a chain of linked blocks. The block hash is dependent on the data 
-                contained within that block, meaning that any change made to the data would require a change to 
-                the block hash. Therefore, the hash of each block is generated based on both the data contained 
-                within that block and the hash of the previous block. These hash identifiers play a major role 
-                in ensuring blockchain security and immutability.
-          </h2>
-        </div>
-      </div>
-
-        
-      <!-- About Us Section -->
-      <div class = 'about' id = 'about' style = 'padding: 2%'>
-        <h1 style = 'font-family: Poppins; font-style: normal; font-weight: normal;
-        font-size: 64px; line-height: 110%; text-align: center; letter-spacing: -0.045em; color: #23242A;'> 
-        Our Leadership
-        </h1>
-        
-        <div data-aos = 'fade-up' data-aos-duration="2000" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <!-- First Slide -->
-            <div class="carousel-item active">
-              <div class = "row justify-content-center" style = 'padding: 6%'>
-                <div class = "col-md-3">
-                  <img class = "card-img-top" src = "Resources/blank.png">
-                  <div class = "card-body">
-                    <h4 class="card-title">Marica Sharashenidze - Founder</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
-                  </div>
-                </div>
-                <div class = "col-md-3">
-                  <img class = "card-img-top" src = "Resources/blank.png">
-                  <div class = "card-body">
-                    <h4 class="card-title">Kennedy Whitehead - Operations</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
-                  </div>
-                </div>
-                <div class = "col-md-3">
-                  <img class = "card-img-top" src = "Resources/blank.png">
-                  <div class = "card-body">
-                    <h4 class="card-title">Destinee Smith - Operations</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Second Slide-->
-            <div class="carousel-item">
-              <div class = "row justify-content-center" style = 'padding: 6%'>
-                <div class = "col-md-3">
-                  <img class = "card-img-top" src = "Resources/Alana.JPG">
-                  <div class = "card-body">
-                    <h4 class="card-title">Alana Foreman - Design</h4>
-                    <p class="card-text">Alana is a high school senior in New York interested in pursuing
-                      Computer Science and Finance. She joined Comb to work with likeminded individuals who are 
-                      passionate about harnessing technology for social good.</p>
-                  </div>
-                </div>
-                <div class = "col-md-3">
-                  <img class = "card-img-top" src = "Resources/Leela.jpg">
-                  <div class = "card-body">
-                    <h4 class="card-title">Leela Yaddanapudi - Design</h4>
-                    <p class="card-text">Leela is an undergraduate Computer Science major in Virginia interested
-                      in employing Blockchain technology for social justice and passionate about activism. </p>
-                  </div>
-                </div>
-                <div class = "col-md-3">
-                  <img class = "card-img-top" src = "Resources/blank.png">
-                  <div class = "card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Third slide -->
-            <div class="carousel-item">
-              <div class = "row justify-content-center" style = 'padding: 6%'>
-                <div class = "col-md-3">
-                  <img class = "card-img-top" src = "Resources/blank.png">
-                  <div class = "card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
-                  </div>
-                </div>
-                <div class = "col-md-3">
-                  <img class = "card-img-top" src = "Resources/blank.png">
-                  <div class = "card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
-                  </div>
-                </div>
-                <div class = "col-md-3">
-                  <img class = "card-img-top" src = "Resources/blank.png">
-                  <div class = "card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Fourth slide -->
-            <div class="carousel-item">
-              <div class = "row justify-content-center" style = 'padding: 6%'>
-                <div class = "col-md-3">
-                  <img class = "card-img-top" src = "Resources/blank.png">
-                  <div class = "card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
-                  </div>
-                </div>
-                <div class = "col-md-3">
-                  <img class = "card-img-top" src = "Resources/blank.png">
-                  <div class = "card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
-                  </div>
-                </div>
-                <div class = "col-md-3">
-                  <img class = "card-img-top" src = "Resources/blank.png">
-                  <div class = "card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!--Controls-->
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" style = 'background-color: #d7e5e9;'>
-            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" style = 'background-color: #d7e5e9;'>
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
-
-
-        <!-- Contact Us Section -->
-        <div class = 'contact' id = 'contact' style = 'background-color: #F0F8FF; padding: 3%'>
-          <h1 style = 'font-family: Poppins;font-style: normal;font-weight: normal;
-                font-size: 52px;line-height: 110%;letter-spacing: -0.045em;color: #23242A; text-align: center;'>
-                Contact Form
-              </h1>
-              <form>
-                <div class="form-group" data-aos = 'fade-up' data-aos-duration="2000">
-                  <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div class="form-group" data-aos = 'fade-up' data-aos-duration="2000">
-                  <label for="exampleInputFullName">Full Name</label>
-                  <input class="form-control" id="exampleInputFullName" placeholder="Full Name">
-                </div>
-                <div class="form-group" data-aos = 'fade-up' data-aos-duration="2000">
-                  <label for="exampleFormControlTextarea1">Reason for Contacting</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Reason for Contacting"></textarea>
-                </div>
-                <div class="d-flex justify-content-center" data-aos = 'fade-up' data-aos-duration="2000">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-                
-              </form>
-        </div>
-
-        <!--Footer-->
-        <div style = 'background-color: #D1DCE5; height: 50px; bottom: 0;'>
-          <p style = 'float: left; padding-top: 1%; padding-left: 5%;'>
-            © 2020-2021 All Rights Reserved.
-          </p>
-          <p style = 'float: right; padding-top: 1%; padding-right: 5%;'>
-            Terms of Service
-          </p>
-        </div>
-
-        <!-- Script Import -->
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-          AOS.init();
-        </script>
-    </body> 
+    </section>
+    
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>
